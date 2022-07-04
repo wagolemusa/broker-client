@@ -1,0 +1,64 @@
+.proStyle {
+    /* font-size: ; */
+    font-size: 18px;
+}
+
+.icons {
+    font-size: 35px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    padding-left: 5px;
+}
+
+.input {
+    transition: border 0.2s ease-in-out;
+    min-width: 200px
+}
+
+.input:focus+.label,
+.input:active+.label,
+.input.filled+.label {
+    font-size: .75rem;
+    transition: all 0.2s ease-out;
+    top: -0.3rem;
+    color: #6b7280;
+}
+
+.label {
+    transition: all 0.2s ease-out;
+    top: 0.4rem;
+    left: 0;
+}
+
+.banner {
+    background: url('https://s1.1zoom.me/b6058/448/Dogs_Svetlana_Shelemeteva_Hug_Little_girls_568770_1920x1080.jpg');
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.homesection {
+    background: url('../src/asserts/h1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+/* .modal {
+
+} */
+
+.showimg  img{
+    width: 830px;
+    height: 400px;
+}
+
+
+@media only screen and (max-width: 640px) {
+    .banner {
+        display: none;
+    }
+
+    .showimg  img{
+        width: 830px;
+        height: 250px;
+    }
+}
