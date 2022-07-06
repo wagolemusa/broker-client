@@ -9,14 +9,14 @@ const Buy = () => {
                Buy Shell
             </button>
 
-            <div class="modal fade fixed top-0 lg:right-0 hidden lg:w-1/3 h-full outline-none overflow-x-hidden overflow-y-auto"
+            <div class="fade fixed top-0 lg:right-0 hidden lg:w-2/20 h-full outline-none overflow-x-hidden overflow-y-auto"
                 id="exampleModalFullscreen" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" aria-hidden="true">
                 <div class="modal-dialog modal-fullscreen relative w-auto pointer-events-none">
                     <div
                         class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
                         <div
                             class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
-                            <h5 class="text-xl font-medium  text-center leading-normal text-gray-600" id="exampleModalFullscreenLabel">
+                            <h5 class="text-sm font-medium  text-center leading-normal text-gray-600" id="exampleModalFullscreenLabel">
                                 Buy with Korgroups blockers
                             </h5>
                             <button type="button"

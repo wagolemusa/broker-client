@@ -9,6 +9,13 @@
     padding-bottom: 50px;
     padding-left: 5px;
 }
+.icons1 {
+    font-size: 25px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 5px;
+    color: rgb(84, 190, 182);
+}
 
 .input {
     transition: border 0.2s ease-in-out;
@@ -46,9 +53,44 @@
 
 } */
 
+.cach img{
+    width: 900px;
+    /* height: 900px; */
+}
+
 .showimg  img{
     width: 830px;
     height: 400px;
+}
+/* .modal {
+    height: 900px;
+    overflow: auto;
+} */
+
+.bg-card {
+
+    background-color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 80vw;
+    border-radius: 40px;
+    margin: 64px auto;
+}
+.imgcard img {
+    
+    width: 70px;
+    text-align: center;
+    /* padding-left: 50px; */
+    padding-right: 10px;
+    /* padding-top: 50px; */
+    
+}
+.homecard {
+    margin: -5rem 0px 0px 6rem;
+}
+.hometitle{
+    margin: -3rem 0px 0px 6rem;
+
 }
 
 

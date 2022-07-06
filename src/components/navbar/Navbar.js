@@ -21,9 +21,10 @@ const Navbar = () => {
             <Link to="/" className="py-7 px-3 inline-block">
               Home
             </Link>
-            <div className="py-7 px-3 inline-block" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreen">
-              BUY A BUSINESS
-            </div>
+            <Link to="/buy" className="py-7 px-3 inline-block">
+            BUY A BUSINESS
+            </Link>
+          
             {/* <Buy /> */}
             <div className="py-7 px-3 inline-block cursor-pointer" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreen1">
 
@@ -52,9 +53,9 @@ const Navbar = () => {
             <Link to="/" className="py-7 px-3 inline-block">
               Home
             </Link>
-            <div className="py-7 px-3 inline-block cursor-pointer" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreen">
+            <Link to="/buy" className="py-7 px-3 inline-block">
               BUY A BUSINESS
-            </div>
+            </Link>
 
             <div className="py-7 px-3 inline-block cursor-pointer" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreen1">
 
@@ -79,7 +80,7 @@ const Navbar = () => {
             class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
             <div
               class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b rounded-t-md">
-              <h5 class="text-xl text-black	font-blod font-medium  text-center leading-normal" id="exampleModalFullscreenLabel">
+              <h5 class="text-sm text-black	font-blod font-medium  text-center leading-normal" id="exampleModalFullscreenLabel">
                 Buy with Korgroups blockers
               </h5>
               <button type="button"
@@ -152,7 +153,7 @@ const Navbar = () => {
             class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
             <div
               class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
-              <h5 class="text-xl font-medium  text-center leading-normal text-gray-600" id="exampleModalFullscreenLabel">
+              <h5 class="text-sm font-medium  text-center leading-normal text-gray-600" id="exampleModalFullscreenLabel">
                 Korgroups blockers connects you with a good Buyer.
               </h5>
               <button type="button"

@@ -3,12 +3,17 @@ import Navbar from "../navbar/Navbar";
 import Button from "../Button";
 import Footer from "../footer/Footer"
 import Cards from "../Cards";
+import Trust from "./Trust";
+import x from '../../asserts/x.png'
+import xx from '../../asserts/xx.png'
+import xc from '../../asserts/xc.png'
+
 
 const Home = () => {
 
   const styles =  {
     secdev: `text-center`,
-    secdevTitle: `text-3xl pb-4`,
+    secdevTitle: `text-2xl pb-4 pt-5 font-extrabold`,
     secdevText: `text-sm font-bold text-gray-600 dark:text-white`
   }
 
@@ -24,48 +29,76 @@ const Home = () => {
               >
               <span className="text-teal-400">Korgroups</span> Business Brokers
             </h1>
-            
+            <p className="text-center pt-2 text-2xl">Sell / Buy petrol stations with Korgroups brokers</p>
             </div>
-            <p className="text-center pt-5 text-2xl">Sell / Buy petrol stations with Korgroups brokers</p>
+           
       </section>
 
-      <section className="md:flex md:justify-between md:items-center">
-        <div className="flex justify-between items-center h-full pl-32">
-    <div class="md:shadow-lg p-6 w-92 bg-white rounded-lg shadow-md" >
-        <h1 class="text-2xl font-bold leading-normal text-center">Sell Petrol Stations</h1>
-        <form class="space-y-5 mt-5">
-            <div class="mb-4 relative">
-                <input id="email" class="w-full rounded px-3 border border-gray-300 pt-3 pb-2 focus:outline-none input active:outline-none" type="text" autofocus />
-                <label for="email" class="label absolute mb-0 -mt-2 pt-4 pl-3 leading-tighter text-gray-500 text-base mt-2 cursor-text">Email or Phone</label>
-            </div>
-            <div class="relative flex items-center border border-gray-300 focus:ring focus:border-blue-500 rounded">
-                <input id="password" class="w-full rounded px-3 pt-3 outline-none pb-2 focus:outline-none active:outline-none input active:border-blue-500" type="password"/>
-                <label for="password" class="label absolute mb-0 -mt-2 pt-4 pl-3 leading-tighter text-gray-500 text-base mt-2 cursor-text">Password</label>
-                
-            </div>
+      <section className="homecard md:flex md:justify-between md:items-center">
+        <div className="flex justify-between items-center h-full pl-10">
+          <div class="md:shadow-lg p-6 w-92 bg-white rounded-lg shadow-md" >
+              <h1 class="text-2xl font-bold leading-normal text-center ">Sell Petrol Stations</h1>
+              <form class="space-y-5 mt-5">
+                  <div class="mb-4 relative">
+                  <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option selected>Choose a country</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                  </select>
+                  </div>
+                  <div class="relative flex items-center border border-gray-300 focus:ring focus:border-blue-500 rounded">
+                  <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option selected>Choose a City</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                  </select>
+                  </div>
 
-            <button class="w-full text-center bg-teal-400 hover:bg-teal-500 duration-300 rounded-full text-white py-2 font-medium">Sell New</button>
-        </form>
-    </div>
-    
-    </div>
-  
-</section>
+                  <button class="w-full text-center bg-teal-400 hover:bg-teal-500 duration-300 rounded-full text-white py-2 font-medium">Sell New</button>
+              </form>
+          </div>
+          
+          </div>
+    </section>
 
 <section>
-  <h2 className="text-center text-xl font-semibold tracking-tight text-gray-900 dark:text-white pt-3">Sell your Petrol Stations in 3 Steps</h2>
+  <h2 className="hometitle text-center text-xl font-semibold tracking-tight text-gray-900 dark:text-white pt-3">Sell your Petrol Stations in 3 Steps</h2>
   <div className='lg:container lg:mx-auto pt-11 pb-10 pl-20'>
   <div className='lg:grid grid-cols-2 lg:grid-cols-3 relative gap-x-8 gap-y-16 px-4'>
-      <div className={styles.secdev}>
-        <h2 className={styles.secdevTitle}>Click on Sell </h2>
+
+        <div className="text-center">
+        <div className="imgcard">
+        <div className={styles.secdev}>
+          <center>
+          <img src={x}  alt="product image" />
+          </center>
+          
+        </div>
+        <h2 className={styles.secdevTitle}>1.Click on Sell </h2>
         <p className={styles.secdevText}>Complate the signup process and post your petrol station, Korgroups will approve with you</p>
       </div>
+      </div>
       <div className={styles.secdev}>
-        <h1 className={styles.secdevTitle}>Connect</h1>
+
+      <div className="imgcard">
+          <center>
+          <img src={xx} alt="product image" />
+          </center>
+        </div>
+        <h1 className={styles.secdevTitle}>2.Connect</h1>
         <p className={styles.secdevText}>Connect with Korgroups and the buyer  for the negosetion</p>
       </div>
       <div className={styles.secdev}>
-        <h1 className={styles.secdevTitle}>Close Deal</h1>
+      <div className="imgcard">
+        <center>
+        <img src={xc}  alt="product image" />
+        </center>
+        </div>
+        <h1 className={styles.secdevTitle}>3.Close Deal</h1>
         <p className={styles.secdevText}>Handle Docements to the buyer  and get payed with the help of our loyers</p>
       </div>
   </div>
@@ -74,6 +107,7 @@ const Home = () => {
 </section>
 
       <Cards />
+      <Trust/>
         <Footer/>
       </div>
     
