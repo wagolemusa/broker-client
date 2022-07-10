@@ -47,7 +47,7 @@
     background: url('../src/asserts/h1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 300px;
+    height: 350px;
 }
 /* .modal {
 
@@ -103,4 +103,41 @@
         width: 830px;
         height: 250px;
     }
+    .homecard{
+        margin: -3rem 0px 3px 2rem;
+    }
+    .hometitle{
+        margin: -0rem 0px 5px 2rem;
+    
+    }
+    .bg-card  h2{
+        padding-left: 15px;
+        font-size: 25px;
+    }
+    .homesection h1{
+        font-size: 40px;
+        padding: 15px;
+    }
+    .homesection p{
+        font-size: 18px;
+    }
+    .cach img{
+        width:1000px;
+        /* height: 900px; */
+        margin: -2rem 0px 3px 2rem;
+    }
+    .footer h1{
+        font-size: 20px;
+       
+     }
+     .caerd2 h1{
+        font-size: 20px;
+       
+     }
+
+     .caerd2{
+        padding-top: 50px;
+        padding-bottom: 20px;
+     }
+  
 }

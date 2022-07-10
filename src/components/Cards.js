@@ -6,7 +6,8 @@ import Buy from './home/Buy'
 
 const Cards = () => {
     return (
-        <div className='lg:container lg:mx-auto pt-11 pb-10'>
+        
+        <section className='lg:container lg:mx-auto pt-11 pb-10'>
             <div className='lg:grid grid-cols-2 lg:grid-cols-3 relative gap-x-2 gap-y-16 px-4'>
 
             <div class="max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
@@ -90,7 +91,7 @@ const Cards = () => {
             </div>
 
         </div>
-        </div>
+        </section>
     )
 }
 

@@ -4,7 +4,7 @@ import ys from '../../asserts/ys.svg'
 const Trust = () => {
 
     const styles = {
-        header: `font-bold font-black text-3xl font-extrabold text-slate-900 sm:text-3xl pb-8`,
+        header: `font-bold font-black text-3xl font-extrabold  text-slate-900 pb-8`,
         title: `proStyle relative inline-flex items-center w-full px-2 py-3 text-xl
         inline-block text-1xl sm:text-2xl font-extrabold text-slate-900 tracking-tight font-medium`,
         body: `text-base font-bold text-gray-500 dark:text-white  pl-11 pb-3`
@@ -13,7 +13,7 @@ const Trust = () => {
         <>
         <section className='bg-slate-50 pt-5 pb-5'>
             <div className='bg-card shadow-md'>
-            <div class="lg:grid lg:grid-cols-3 gap-4 pt-8 pb-8 pr-11 pl-20">
+            <div class="lg:grid lg:grid-cols-3 gap-4 pt-8 pb-8 pr-11 sm:pl-20">
              <div class="col-span-2 ...">
 
                 <h2 className={styles.header}>Why do you trust Korgroups Blockers</h2>
@@ -62,9 +62,9 @@ const Trust = () => {
 
         </section>
 
-        <section className='pt-20 pb-20'>
+        <section className='caerd2 pt-20 pb-20'>
         <h1
-          className="lg:text-3xl text-3xl md:mb-0 mb-6  font-extrabold lg:leading-normal text-center font-semibold
+          className=" lg:text-3xl md:mb-0 mb-6  font-extrabold lg:leading-normal text-center
          "
         >
           <span className="text-teal-400">Korgroups</span> is the First and Largest Online Brokerage Petrol Stations Experts

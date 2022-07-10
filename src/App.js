@@ -9,14 +9,15 @@ import Sell from './components/sell/sell';
 import Show from './components/home/Show';
 import Login from './components/home/Login';
 import About from './components/pages/About';
+import Nav from './components/navbar/Nav';
 
 function App() {
   return (
     <div className="App">
       <Router>
-      <Navbar />
-  
-    
+      {/* <Navbar /> */}
+      <Nav/>
+      
         <Routes>  
           <Route exact path='/' element={<Home />} />
           <Route path="/navbar" element={<Navbar />} />

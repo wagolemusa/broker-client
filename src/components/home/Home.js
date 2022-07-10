@@ -19,12 +19,12 @@ const Home = () => {
 
 
     return(
-      <div>
-        <section className="homesection pt-5 text-white font-sans font-bold bg-slate-900">
-            <div className="pt-10 pb-20">
+      <section>
+        <section className="homesection pt-11 text-white font-sans font-bold bg-slate-900">
+            <div className="pt-11 pb-20">
 
             <h1
-              className="lg:text-5xl text-4xl md:mb-0 mb-8 lg:leading-normal font-semibold
+              className="text-5xl lg:text-2  md:mb-0 mb-8 lg:leading-normal font-extrabold 
                  text-center"
               >
               <span className="text-teal-400">Korgroups</span> Business Brokers
@@ -35,7 +35,7 @@ const Home = () => {
       </section>
 
       <section className="homecard md:flex md:justify-between md:items-center">
-        <div className="flex justify-between items-center h-full pl-10">
+        <div className="flex justify-between items-center h-full pl-10 sm:pl-0">
           <div class="md:shadow-lg p-6 w-92 bg-white rounded-lg shadow-md" >
               <h1 class="text-2xl font-bold leading-normal text-center ">Sell Petrol Stations</h1>
               <form class="space-y-5 mt-5">
@@ -67,8 +67,8 @@ const Home = () => {
 
 <section>
   <h2 className="hometitle text-center text-xl font-semibold tracking-tight text-gray-900 dark:text-white pt-3">Sell your Petrol Stations in 3 Steps</h2>
-  <div className='lg:container lg:mx-auto pt-11 pb-10 pl-20'>
-  <div className='lg:grid grid-cols-2 lg:grid-cols-3 relative gap-x-8 gap-y-16 px-4'>
+  <div className='lg:container lg:mx-auto sm:p-20'>
+  <div className='lg:grid grid-cols-2 lg:grid-cols-3 relative gap-x-8 gap-y-16 px-8'>
 
         <div className="text-center">
         <div className="imgcard">
@@ -109,7 +109,7 @@ const Home = () => {
       <Cards />
       <Trust/>
         <Footer/>
-      </div>
+      </section>
     
      
     )
