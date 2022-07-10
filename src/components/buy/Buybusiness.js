@@ -6,11 +6,11 @@ import Sold from "../Sold";
 
 const Buybusiness = () => {
   return (
-    <>
+    <div className="pt-11">
     <Relatd/>
     <Sold/>
     <Footer/>
-    </>
+    </div>
   )
 }
 

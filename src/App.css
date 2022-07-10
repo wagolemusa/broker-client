@@ -92,6 +92,11 @@
     margin: -3rem 0px 0px 6rem;
 
 }
+.sider img {
+    width: 30px;
+    float: right;
+    /* padding-right: 90px; */
+}
 
 
 @media only screen and (max-width: 640px) {
