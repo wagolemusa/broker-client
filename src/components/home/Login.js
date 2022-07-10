@@ -3,7 +3,7 @@ import React from "react";
 const Login = () => {
 
     return(
-        <div>
+    <div className="pt-24">
     <div class="pt-10 relative flex flex-col space-y-10 justify-center items-center">
     <div class="md:shadow-lg shadow-none rounded p-6 w-96" >
         <h1 class="text-3xl font-bold leading-normal" >Sign in</h1>
