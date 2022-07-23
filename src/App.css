@@ -101,6 +101,16 @@
     padding-left: 980px;
 
 }
+.sell{
+    font-size: 22px;
+    padding: 30px;
+    font-weight: 600;
+    
+    
+}
+/* .footer button {
+    padding-left: 50px;
+} */
 
 @media only screen and (max-width: 640px) {
     .banner {

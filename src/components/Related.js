@@ -3,6 +3,7 @@ import b from  '../asserts/b.jpg'
 import vb from '../asserts/vb.jpg'
 import p1 from '../asserts/p1.jpg'
 import Buy from './home/Buy'
+import Buyshell from './buy/Buyshell'
 
 const Relatd = () => {
     return (
@@ -31,7 +32,10 @@ const Relatd = () => {
                         <span class="text-1xl font-bold text-gray-500 dark:text-white">Approved</span>
                     </a>
                         
-                        <Buy/>
+                                        
+                    <a href="/buyshell" button class="bg-teal-400 hover:bg-teal-500 duration-300 text-white font-bold py-2 px-4 rounded">
+                       Buy
+                    </a>
                     </div>
                 </div>
             </div>

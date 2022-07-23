@@ -12,6 +12,8 @@ import About from './components/dashboard/About';
 import Nav from './components/navbar/Nav';
 import Getbuyer from './components/dashboard/Getbuyer';
 import Getseller from './components/dashboard/Getseller';
+import Buyshell from './components/buy/Buyshell';
+import Sellshell from './components/sell/Sellshell';
 
 function App() {
   return (
@@ -28,6 +30,7 @@ function App() {
           <Route path='/show' element={<Show />} />
           <Route path='/login' element={<Login />} />
           <Route path='/about' element={<About />} />
+          <Route path='/buyshell' element={<Buyshell />} />
           <Route path='/sellers' element={<Getbuyer />} />
           <Route path='/buyers' element={<Getseller />} />
 
