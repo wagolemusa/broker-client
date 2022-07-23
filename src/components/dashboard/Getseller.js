@@ -12,7 +12,6 @@ const Getseller = () => {
       </section>
     )
 }
-
 export default Getseller;
 
 

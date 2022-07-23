@@ -6,12 +6,30 @@ const Nav = () => {
 
   return (
     <div>
-<nav class="fixed-top w-full flex flex-wrap items-center justify-between py-4 bg-gray-900
-    text-white hover:text-white focus:text-white shadow-lg
+  <section className="justify-between items-center">
+    <div className="bg-gray-800 h-14">
+     
+     <ul className="flex">
+      <li className="care text-white pt-3 pl-10 font-extrabold text-sm">Customer Care  +254 725 696 042</li>
+     <div className="login">
+   
+    <li>
+    <a href="/login" className="text-white pt-10  font-extrabold text-sm">
+      Login
+    </a>
+    </li>
+  
+
+     </div>
+     </ul>
+    </div>
+  </section>
+<nav class="w-full flex flex-wrap items-center justify-between py-4 bg-white
+    text-black hover:gray-900 focus:text-white shadow-lg
     navbar navbar-expand-lg navbar-light">
   <div class="container-fluid w-full flex flex-wrap  justify-between px-6">
   <button class="navbar-toggler
-      text-white
+     bg-gray-900 
       border-0
       hover:shadow-none hover:no-underline
       py-2
@@ -31,7 +49,7 @@ const Nav = () => {
   <Link to="/" >
           <img src={log} alt="logo" className="md:cursor-pointer h-9" />
     </Link>
-  <ul class="navbar-nav font-extrabold flex flex-col lg:pl-32  md:pl-0 mr-auto md:flex text-white uppercase sm:text-sm sm:gap-2 font-[Poppins]">
+  <ul class="navbar-nav font-extrabold flex flex-col lg:pl-32  md:pl-0 mr-auto md:flex text-gray-900 uppercase sm:text-sm sm:gap-2 font-[Poppins]">
    
     <li class="nav-item p-2">
  

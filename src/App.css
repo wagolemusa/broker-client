@@ -97,7 +97,10 @@
     float: right;
     /* padding-right: 90px; */
 }
+.login a {
+    padding-left: 980px;
 
+}
 
 @media only screen and (max-width: 640px) {
     .banner {
@@ -144,5 +147,13 @@
         padding-top: 50px;
         padding-bottom: 20px;
      }
-  
+     .login a{
+        padding-left: 70px;
+        cursor: pointer;
+        padding-bottom: 50px;
+    }
+    .care {
+        font-size: 12px;
+    }
+    
 }
