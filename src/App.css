@@ -111,6 +111,11 @@
 /* .footer button {
     padding-left: 50px;
 } */
+.suc {
+  
+    border-radius: 0.5rem;
+    color: #69F0AE;
+}
 
 @media only screen and (max-width: 640px) {
     .banner {

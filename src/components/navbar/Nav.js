@@ -3,8 +3,41 @@ import { Link } from "react-router-dom";
 import Button from "../Button";
 import log from "../../../src/asserts/log.png"
 import Sellshell from "../sell/Sellshell";
+import { useDispatch, useSelector } from 'react-redux'
 const Nav = () => {
+  const auth = useSelector(state => state.auth)
 
+  const dispatch = useDispatch();
+
+  const logout = () => {
+    window.localStorage.clear();
+    window.location.replace('/');
+  }
+
+  const renderLoginLinks = () => {
+    return(
+      <span button class="bg-teal-400 hover:bg-teal-500 duration-300 text-white font-bold py-2 px-4 rounded" onClick={logout}>
+      Logout
+    </span>
+    )
+  }
+
+  const renderNonLoggedLinks = () => {
+    return(
+      <>
+        <a href="/login" className="text-white pt-10  font-extrabold text-sm">
+           Login
+        </a> 
+      </>
+      
+    )
+  }
+
+  const renderButton = () => {
+    return(
+      <Button />
+    )
+  }
   return (
     <div>
   <section className="justify-between items-center">
@@ -14,10 +47,9 @@ const Nav = () => {
       <li className="care text-white pt-3 pl-10 font-extrabold text-sm">Customer Care  +254 725 696 042</li>
      <div className="login">
    
-    <li>
-    <a href="/login" className="text-white pt-10  font-extrabold text-sm">
-      Login
-    </a>
+    <li> 
+    {auth.authenticate ?  '': renderNonLoggedLinks()}
+
     </li>
   
 
@@ -76,7 +108,8 @@ const Nav = () => {
 
   <div class="flex items-center relative">
 
-      <Button />
+  {auth.authenticate ?  renderLoginLinks() : renderButton()}
+     
 
   </div>
   </div>

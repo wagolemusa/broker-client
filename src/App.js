@@ -1,4 +1,4 @@
-
+import React,{ useEffect} from 'react';
 import './App.css';
 import Home from './components/home/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -14,8 +14,23 @@ import Getbuyer from './components/dashboard/Getbuyer';
 import Getseller from './components/dashboard/Getseller';
 import Buyshell from './components/buy/Buyshell';
 import Sellshell from './components/sell/Sellshell';
+import Dashoard from './components/dashboard/Dashoard';
+import { useDispatch, useSelector } from 'react-redux';
+import {isUserLogin } from './actions/authActions'
+
 
 function App() {
+
+  const dispatch = useDispatch();
+  const auth = useSelector(state => state.auth)
+
+  useEffect(() => {
+    if(!auth.authenticate){
+        dispatch(isUserLogin());
+    }
+    // dispatch(getInitialData());
+},[]);
+
   return (
     <div className="App">
       <Router>
@@ -33,7 +48,7 @@ function App() {
           <Route path='/buyshell' element={<Buyshell />} />
           <Route path='/sellers' element={<Getbuyer />} />
           <Route path='/buyers' element={<Getseller />} />
-
+          <Route path='/dashoard' element={<Dashoard />} />
           
         </Routes>
 
