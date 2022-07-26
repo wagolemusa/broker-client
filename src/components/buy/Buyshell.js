@@ -3,10 +3,13 @@ import Signup from './Signup';
 import Location from './Location';
 import Personal from './Personal';
 import Footer from '../footer/Footer';
+import axios from 'axios';
 
 
 function Buyshell() {
     const [page, setPage]  = useState(0);
+    const [error, setError] = useState("")
+    const [success, setSuccess] = useState("");
     const [formData, setFormData] = useState({
         firstname: "",
         lastname: "",
@@ -15,6 +18,34 @@ function Buyshell() {
         country: "",
         city: "",
     });
+    // post data in database
+    const handleSubmit = async () => {
+      
+        setError(null)
+
+        const response = await axios.post('https://brokerback.herokuapp.com/api/buyer', formData, {
+            headers: {
+                "Content-Type": "multipart/form-data",
+                "Access-Control-Allow-Origin": "*"
+            }
+        })
+        .catch((err) => {
+            console.log(err.response.data)
+        if (err && err.response) setError(err.response.data.message);
+        setSuccess(null);
+        });
+        if(response && response.data){
+            setError(null);
+            setSuccess(response.data.message);
+        }
+        if(response.status === 201){
+            window.location.replace("/")
+        }
+        if(response?.data?.errors){
+            const message = response.data.errors.map(item => item.msg)
+            setError(message)
+        }
+    }
 
     const  FormTitle = ["Let us know you!", "Provide Business Active Contacts", "Let us know where you come from!"];
         const PageDisplay = () => {
@@ -33,9 +64,9 @@ function Buyshell() {
             
                 <div class="md:shadow-lg shadow-none rounded p-6 w-96 bg-white" >
                 <h1 className='text-slate-500 font-semibold'>{FormTitle[page]}</h1>
+                
                         {PageDisplay()}
                  
-
                         <div className='footer'>
                         <button className="bg-white hover:bg-gray-100 text-slate-500 font-semibold py-1 px-4 border rounded-full border-teal-400  shadow"
                                 disabled={page == 0}
@@ -50,7 +81,8 @@ function Buyshell() {
                            
                                 onClick={() => {
                                     if(page === FormTitle.length -1){
-                                        console.log(formData);
+                                    
+                                        handleSubmit(formData)
 
                                     }else {
                                         setPage((currPage) => currPage + 1);
