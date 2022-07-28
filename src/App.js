@@ -15,6 +15,7 @@ import Getseller from './components/dashboard/Getseller';
 import Buyshell from './components/buy/Buyshell';
 import Sellshell from './components/sell/Sellshell';
 import Dashoard from './components/dashboard/Dashoard';
+import Create from './components/dashboard/Create';
 import { useDispatch, useSelector } from 'react-redux';
 import {isUserLogin } from './actions/authActions'
 
@@ -49,6 +50,7 @@ function App() {
           <Route path='/sellers' element={<Getbuyer />} />
           <Route path='/buyers' element={<Getseller />} />
           <Route path='/dashoard' element={<Dashoard />} />
+          <Route path='/create' element={<Create />} />
           
         </Routes>
 
