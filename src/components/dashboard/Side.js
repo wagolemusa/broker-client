@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { BsCheckLg } from "react-icons/bs";
 import { FcNegativeDynamic } from "react-icons/fc";
 import { FcMindMap } from "react-icons/fc";
+import { FcTimeline } from "react-icons/fc";
 
 const Side = () => {
     const [open, setOpen] = useState(true)
@@ -21,17 +22,21 @@ const Side = () => {
             <Link to="/buyers">
             <FcNegativeDynamic className="w-7" />
             </Link>
-                
-
-                <Link to="/buyers" className={`${!open && 'hidden'} origin-left duralation-200`}>Buyers
+              <Link to="/buyers" className={`${!open && 'hidden'} origin-left duralation-200`}>Buyers
                 </Link>
-            
               </li>
+
               <li className="text-xl font-semibold flex items-center gap-x-4 cursor p-5 hover:bg-teal-300 hover:text-white rounded-md">
               <Link to="/sellers">
                 <FcMindMap  className="w-7"/>
               </Link>  
               <Link to="/sellers"  className={`${!open && 'hidden'} origin-left duralation-200`}>Sellers</Link>
+              </li>
+              <li className="text-xl font-semibold flex items-center gap-x-4 cursor p-5 hover:bg-teal-300 hover:text-white rounded-md">
+              <Link to="/create">
+                <FcTimeline  className="w-7"/>
+              </Link>  
+              <Link to="/create"  className={`${!open && 'hidden'} origin-left duralation-200`}>Shells</Link>
               </li>
             </ul>
           

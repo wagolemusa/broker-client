@@ -111,6 +111,23 @@
 /* .footer button {
     padding-left: 50px;
 } */
+.suc {
+  
+    border-radius: 0.5rem;
+    color: #69F0AE;
+}
+.scoll{
+    /* background-color: rgb(100 116 139/.5)!important; */
+    height: 34.375rem!important;
+    /* width: 1.375rem!important; */
+}
+.cardpost {
+    width: 500px;
+}
+.showimage img{
+    width: 100px;
+    height: 100px;
+}
 
 @media only screen and (max-width: 640px) {
     .banner {
