@@ -19,6 +19,7 @@ function Buyshell() {
         city: "",
     });
     // post data in database
+    
     const handleSubmit = async () => {
       
         setError(null)

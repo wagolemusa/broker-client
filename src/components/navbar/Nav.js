@@ -16,7 +16,7 @@ const Nav = () => {
 
   const renderLoginLinks = () => {
     return(
-      <span button class="bg-teal-400 hover:bg-teal-500 duration-300 text-white font-bold py-2 px-4 rounded" onClick={logout}>
+      <span button class="inline-block px-6 py-2.5 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out" onClick={logout}>
       Logout
     </span>
     )
