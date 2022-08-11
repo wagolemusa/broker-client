@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from 'axios'
 import Navbar from "../navbar/Navbar";
 import Button from "../Button";
 import Footer from "../footer/Footer"
@@ -7,9 +8,33 @@ import Trust from "./Trust";
 import x from '../../asserts/x.png'
 import xx from '../../asserts/xx.png'
 import xc from '../../asserts/xc.png'
-
+import { matchRoutes } from "react-router-dom";
+let token = localStorage.getItem('token')
 
 const Home = () => {
+
+
+
+    const [getcoutry, setGetcoutry] = useState([]);
+
+    const getcoutrydata = () =>{
+      axios.get('https://brokerback.herokuapp.com/api/country', {
+        headers: {
+          'Authorization': token,
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        }
+      })
+        .then((res) => {
+          const myseller = res.data.post;
+          setGetcoutry(myseller);
+
+        })
+    }
+    useEffect(() => getcoutrydata(), []);
+    // console.log(getcoutry);
+
+
 
   const styles =  {
     secdev: `text-center`,
@@ -41,20 +66,28 @@ const Home = () => {
               <form class="space-y-5 mt-5">
                   <div class="mb-4 relative">
                   <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                    <option selected>Choose a country</option>
-                    <option value="US">United States</option>
-                    <option value="CA">Canada</option>
-                    <option value="FR">France</option>
-                    <option value="DE">Germany</option>
+                  <option value="DE">select Country</option>
+                  { getcoutry?.map((coutry) => {
+                    return(
+                     
+                      <option value="DE">{coutry.country}</option>
+                    )
+                  })
+                 
+                  }
                   </select>
                   </div>
                   <div class="relative flex items-center border border-gray-300 focus:ring focus:border-blue-500 rounded">
                   <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                    <option selected>Choose a City</option>
-                    <option value="US">United States</option>
-                    <option value="CA">Canada</option>
-                    <option value="FR">France</option>
-                    <option value="DE">Germany</option>
+                  <option value="DE">select City</option>
+                  { getcoutry?.map((coutry) => {
+                    return(
+                     
+                      <option value="DE">{coutry.city}</option>
+                    )
+                  })
+                 
+                  }
                   </select>
                   </div>
 

@@ -44,7 +44,7 @@ function App() {
           <Route path="/navbar" element={<Navbar />} />
           <Route path="/sell" element={<Sell />} />
           <Route path='/buy' element={<Buy />} />
-          <Route path='/show' element={<Show />} />
+          <Route path='/show/:postId' element={<Show />} />
           <Route path='/login' element={<Login />} />
           <Route path='/about' element={<About />} />
           <Route path='/buyshell' element={<Buyshell />} />

@@ -129,6 +129,33 @@
     height: 100px;
 }
 
+.paginationBttns {
+    width: 80%;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    /* justify-content: right; */
+    float: left;
+}
+
+.paginationBttns a {
+    padding: 10px;
+    margin: 8px;
+    border-radius: 5px;
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+    cursor: pointer;
+}
+.paginationBttns a:hover{
+    color: white;
+    background-color: #38bdf8;
+}
+
+.paginationActive a {
+    color: white;
+    background-color: #38bdf8;
+}
+
 @media only screen and (max-width: 640px) {
     .banner {
         display: none;
