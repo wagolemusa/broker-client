@@ -26,7 +26,8 @@ const Cards = () => {
         })
     }
     useEffect(() => gethomepost(), []);
-    console.log(homedata)
+
+    // console.log(homedata)
 
     return (
         
@@ -36,7 +37,7 @@ const Cards = () => {
             {
                 homedata?.map((home) => {
                     return(
-                        <div class="max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+                        <div class="home max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
                         <Link to={`/show/${home._id}`}>
                             <img src={home.postPictures[0].img} class="p-2 rounded-t-lg" alt="product image" />
                         </Link>

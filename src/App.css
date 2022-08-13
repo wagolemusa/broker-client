@@ -156,6 +156,10 @@
     background-color: #38bdf8;
 }
 
+.home img{
+    height: 230px;
+}
+
 @media only screen and (max-width: 640px) {
     .banner {
         display: none;

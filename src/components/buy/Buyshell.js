@@ -10,6 +10,7 @@ function Buyshell() {
     const [page, setPage]  = useState(0);
     const [error, setError] = useState("")
     const [success, setSuccess] = useState("");
+
     const [formData, setFormData] = useState({
         firstname: "",
         lastname: "",
@@ -21,9 +22,7 @@ function Buyshell() {
     // post data in database
     
     const handleSubmit = async () => {
-      
         setError(null)
-
         const response = await axios.post('https://brokerback.herokuapp.com/api/buyer', formData, {
             headers: {
                 "Content-Type": "multipart/form-data",
