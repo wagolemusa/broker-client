@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import b from  '../asserts/b.jpg'
-import vb from '../asserts/vb.jpg'
-import p1 from '../asserts/p1.jpg'
+
 import Buy from './home/Buy'
 import { Link } from 'react-router-dom'
 let token = localStorage.getItem('token')
