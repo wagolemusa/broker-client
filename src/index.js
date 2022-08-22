@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import 'tw-elements';
 import { Provider } from 'react-redux';
 import store from './store';
-
+import 'react-alice-carousel/lib/alice-carousel.css';
 import { BrowserRouter } from "react-router-dom";
 
 window.store = store;

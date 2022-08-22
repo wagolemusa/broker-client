@@ -19,6 +19,7 @@ import Create from './components/dashboard/Create';
 import Post from './components/dashboard/Post';
 import { useDispatch, useSelector } from 'react-redux';
 import {isUserLogin } from './actions/authActions'
+import DisplayData from './data/Displaydata';
 
 
 function App() {
@@ -44,7 +45,7 @@ function App() {
           <Route path="/navbar" element={<Navbar />} />
           <Route path="/sell" element={<Sell />} />
           <Route path='/buy' element={<Buy />} />
-          <Route path='/show' element={<Show />} />
+          <Route path='/show/:postId' element={<Show />} />
           <Route path='/login' element={<Login />} />
           <Route path='/about' element={<About />} />
           <Route path='/buyshell' element={<Buyshell />} />
@@ -53,6 +54,7 @@ function App() {
           <Route path='/dashoard' element={<Dashoard />} />
           <Route path='/create' element={<Create />} />
           <Route path='/post' element={<Post />} />
+          <Route path='/data' element={<DisplayData />} />
           
         </Routes>
 
