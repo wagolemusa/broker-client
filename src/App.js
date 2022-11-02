@@ -49,8 +49,8 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/about' element={<About />} />
           <Route path='/buyshell' element={<Buyshell />} />
-          <Route path='/sellers' element={<Getbuyer />} />
-          <Route path='/buyers' element={<Getseller />} />
+          <Route path='/buyers' element={<Getbuyer />} />
+          <Route path='/sellers' element={<Getseller />} />
           <Route path='/dashoard' element={<Dashoard />} />
           <Route path='/create' element={<Create />} />
           <Route path='/post' element={<Post />} />

@@ -78,7 +78,7 @@ const Nav = () => {
     </path>
   </svg>
   </button>
-  <div class="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent">
+  <div class="navbar-collapse flex-grow items-center" id="navbarSupportedContent">
   <Link to="/" >
           <img src={log} alt="logo" className="md:cursor-pointer h-9" />
     </Link>
@@ -110,7 +110,6 @@ const Nav = () => {
 
   {auth.authenticate ?  renderLoginLinks() : renderButton()}
      
-
   </div>
   </div>
 </nav>
@@ -134,9 +133,6 @@ const Nav = () => {
               </h5>
 
               <Sellshell/>
-
-              
-
            
           </div>
         </div>

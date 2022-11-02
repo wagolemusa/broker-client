@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import r from '../../asserts/r.png';
 import { Link } from "react-router-dom";
-import { BsCheckLg } from "react-icons/bs";
+
 import { FcNegativeDynamic } from "react-icons/fc";
 import { FcMindMap } from "react-icons/fc";
 import { FcTimeline } from "react-icons/fc";
