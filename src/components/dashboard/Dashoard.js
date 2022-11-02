@@ -1,6 +1,4 @@
 import React from "react";
-import Buy from "../home/Buy";
-
 import Side from "./Side";
 const Dashoard = () => {
 
