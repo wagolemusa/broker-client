@@ -6,7 +6,7 @@ import { BsCheckLg } from "react-icons/bs";
 import { AiOutlineDribbble } from "react-icons/ai";
 import { TbPhoneCheck } from "react-icons/tb";
 import { BsAt } from "react-icons/bs";
-import Buy from "./Buy";
+import Buy from "./BuyBusiness";
 import Footer from "../footer/Footer";
 import Relatd from "../Related";
 import Sold from "../Sold";

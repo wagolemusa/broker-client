@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
-import Buy from './home/Buy'
+import Buy from './home/BuyBusiness'
 import { Link } from 'react-router-dom'
 let token = localStorage.getItem('token')
 const Cards = () => {
@@ -54,7 +54,7 @@ const Cards = () => {
                             <div class="flex justify-between items-center">
  
                             <Link to={`/show/${home._id}`}class="text-1xl font-bold text-gray-500 dark:text-white"> Approved</Link>
-                                <Buy/>
+                            <Link to='/buybusiness' class="w-24 text-center bg-teal-400 hover:bg-teal-500 duration-300 rounded-full text-white py-2 font-medium">Buy Shell</Link>
                             </div>
                         </div>
                     </div>

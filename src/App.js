@@ -17,6 +17,7 @@ import Sellshell from './components/sell/Sellshell';
 import Dashoard from './components/dashboard/Dashoard';
 import Create from './components/dashboard/Create';
 import Post from './components/dashboard/Post';
+import BuyBusiness from './components/home/BuyBusiness';
 import { useDispatch, useSelector } from 'react-redux';
 import {isUserLogin } from './actions/authActions'
 import DisplayData from './data/Displaydata';
@@ -49,6 +50,7 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/about' element={<About />} />
           <Route path='/buyshell' element={<Buyshell />} />
+          <Route path='/buybusiness' element={<BuyBusiness />} />
           <Route path='/buyers' element={<Getbuyer />} />
           <Route path='/sellers' element={<Getseller />} />
           <Route path='/dashoard' element={<Dashoard />} />

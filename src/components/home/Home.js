@@ -8,7 +8,7 @@ import Trust from "./Trust";
 import x from '../../asserts/x.png'
 import xx from '../../asserts/xx.png'
 import xc from '../../asserts/xc.png'
-import Buy from "./Buy";
+import Buy from "./BuyBusiness";
 import { Link } from 'react-router-dom'
 import { matchRoutes } from "react-router-dom";
 let token = localStorage.getItem('token')

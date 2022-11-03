@@ -14,7 +14,7 @@ const Trust = () => {
         <section className='bg-slate-50 pt-5 pb-5'>
             <div className='bg-card shadow-md'>
             <div class="lg:grid lg:grid-cols-3 gap-4 pt-8 pb-8 pr-11 sm:pl-20">
-             <div class="col-span-2 ...">
+                <div class="col-span-2 ...">
 
                 <h2 className={styles.header}>Why do you trust Korgroups Blockers</h2>
                 
