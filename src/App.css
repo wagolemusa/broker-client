@@ -44,7 +44,7 @@
 }
 
 .homesection {
-    background: url('../src/asserts/h1.jpg');
+    background: linear-gradient(rgba(9, 32, 50, 0.5), rgba(9, 32, 50, 0.5)), url('../src/asserts/h1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 350px;
@@ -68,7 +68,6 @@
 } */
 
 .bg-card {
-
     background-color: #ffffff;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -164,6 +163,11 @@
     padding-left: 10rem;
     /* padding-right: 10rem; */
 }
+.nav-item {
+    font-size: 14px;
+    font-weight: 600;
+    
+}
 
 @media only screen and (max-width: 640px) {
     .banner {
@@ -233,6 +237,19 @@
     }
     .card2  {
         width: 340px;
+    }
+    .nav-item {
+        font-size: 12px;
+        font-weight: 600;
+
+    }
+    .bg-card {
+        background-color: #ffffff;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 90vw;
+        border-radius: 40px;
+        margin: 64px auto;
     }
     
 }

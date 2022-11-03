@@ -21,6 +21,7 @@ import BuyBusiness from './components/home/BuyBusiness';
 import { useDispatch, useSelector } from 'react-redux';
 import {isUserLogin } from './actions/authActions'
 import DisplayData from './data/Displaydata';
+import Navbar3 from './components/navbar/Navbar3';
 
 
 function App() {
@@ -39,8 +40,9 @@ function App() {
     <div className="App">
       <Router>
       {/* <Navbar /> */}
-      <Nav/>
+      {/* <Nav/> */}
       
+      <Navbar3 />
         <Routes>  
           <Route exact path='/' element={<Home />} />
           <Route path="/navbar" element={<Navbar />} />

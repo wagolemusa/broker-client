@@ -4,9 +4,10 @@ import Button from "../Button";
 import log from "../../../src/asserts/log.png"
 import Sellshell from "../sell/Sellshell";
 import {  useSelector } from 'react-redux'
-const Nav = () => {
-  const auth = useSelector(state => state.auth)
 
+const Nav = () => {
+
+  const auth = useSelector(state => state.auth)
 
   const logout = () => {
     window.localStorage.clear();
@@ -56,6 +57,7 @@ const Nav = () => {
      </ul>
     </div>
   </section>
+  
 <nav class="w-full flex flex-wrap items-center justify-between py-4 bg-white
     text-black hover:gray-900 focus:text-white shadow-lg
     navbar navbar-expand-lg navbar-light">
@@ -77,6 +79,8 @@ const Nav = () => {
     </path>
   </svg>
   </button>
+
+
   <div class="navbar-collapse flex-grow items-center" id="navbarSupportedContent">
   <Link to="/" >
           <img src={log} alt="logo" className="md:cursor-pointer h-9" />
