@@ -1,5 +1,6 @@
 import React, {  useState } from "react";
 import axios from 'axios'
+import Footer from "../footer/Footer";
 import { BsCheckLg } from "react-icons/bs";
 
 let token = localStorage.getItem('token')
@@ -68,7 +69,7 @@ const BuyBusiness = () => {
 
                 <div className="grid grid-cols-2 gap-3">
                     <div className="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">                       
-                       <div className="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
+                       <div className="card2 modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
                             <h5 className="text-sm font-medium  text-center leading-normal text-gray-600" id="exampleModalFullscreenLabel">
                                 Buy with Korgroups blockers
                             </h5>
@@ -88,7 +89,7 @@ const BuyBusiness = () => {
                     )) : <p>{error} </p>
                     } 
 
-                        <form onSubmit={handleSubmit} class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                        <form onSubmit={handleSubmit} class="card1 bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
                             <div className="mb-4">
                                 <label class="block text-gray-700 text-sm font-bold mb-2" for="Firstname">
                                     Firstname
@@ -148,7 +149,7 @@ const BuyBusiness = () => {
                         </form>
                     </div>
                  
-                <div>
+           
                 <div className="buyback1">
                 <div className="lg:grid lg:grid-cols-3 gap-4 pt-8 pb-8 pr-11 sm:pl-20">
                 <div className="col-span-2 ...">
@@ -192,12 +193,12 @@ const BuyBusiness = () => {
                         </div>
           
             </div>
-
+            <div>
                 </div>
         </div>
                 </div>
             </div>
-          
+            <Footer/>
         </section>
     )
 }

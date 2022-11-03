@@ -218,5 +218,21 @@
     .care {
         font-size: 12px;
     }
+
+    .buyback {
+        padding: 15px;
+        /* padding-left: 1rem; */
+        /* padding-right: 5rem; */
+    }
+
+    .buyback1{
+        display: none;
+    }
+    .card1 {
+        width: 350px;
+    }
+    .card2  {
+        width: 340px;
+    }
     
 }
