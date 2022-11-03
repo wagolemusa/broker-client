@@ -66,10 +66,10 @@ const BuyBusiness = () => {
             <br/>
             <div className="buyback">
 
-                <div class="grid grid-cols-2 gap-3">
-                    <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">                       
-                       <div class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
-                            <h5 class="text-sm font-medium  text-center leading-normal text-gray-600" id="exampleModalFullscreenLabel">
+                <div className="grid grid-cols-2 gap-3">
+                    <div className="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">                       
+                       <div className="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
+                            <h5 className="text-sm font-medium  text-center leading-normal text-gray-600" id="exampleModalFullscreenLabel">
                                 Buy with Korgroups blockers
                             </h5>
                         </div>
@@ -79,8 +79,8 @@ const BuyBusiness = () => {
                     </div>}
 
                     {!success && Array.isArray(error) ? error.map((item, i) => (
-                        <div class="notice notice-danger alert fade show" role="alert">
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <div className="notice notice-danger alert fade show" role="alert">
+                            <button type="button" className="close" data-dismiss="alert" aria-label="Close">
                                 <span aria-hidden="true">×</span>
                             </button>
                             <h4 key={i}> {item} </h4>
@@ -89,58 +89,58 @@ const BuyBusiness = () => {
                     } 
 
                         <form onSubmit={handleSubmit} class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-                            <div class="mb-4">
+                            <div className="mb-4">
                                 <label class="block text-gray-700 text-sm font-bold mb-2" for="Firstname">
                                     Firstname
                                 </label>
-                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="firstname" type="text" placeholder="Firstname"
+                                <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="firstname" type="text" placeholder="Firstname"
                                  onChange={(e) => setFirstname(e.target.value)}
                                 />
                             </div>
-                            <div class="mb-4">
-                                <label class="block text-gray-700 text-sm font-bold mb-2" for="lastname">
+                            <div className="mb-4">
+                                <label className="block text-gray-700 text-sm font-bold mb-2" for="lastname">
                                     Lastname
                                 </label>
-                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="lastname" type="text" placeholder="Lastname" 
+                                <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="lastname" type="text" placeholder="Lastname" 
                                  onChange={(e) => setLastname(e.target.value)}
                                 />
                             </div>
-                            <div class="mb-4">
-                                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                            <div className="mb-4">
+                                <label className="block text-gray-700 text-sm font-bold mb-2" for="username">
                                     Email
                                 </label>
-                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email"
+                                <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email"
                                      onChange={(e) => setEmail(e.target.value)}
                                 />
                             </div>
-                            <div class="mb-4">
-                                <label class="block text-gray-700 text-sm font-bold mb-2" for="phone Number">
+                            <div className="mb-4">
+                                <label className="block text-gray-700 text-sm font-bold mb-2" for="phone Number">
                                     Phone Number
                                 </label>
-                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="phone" type="number" placeholder="Phone Number" 
+                                <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="phone" type="number" placeholder="Phone Number" 
                                  onChange={(e) => setPhone(e.target.value)}
                                 />
                             </div>
-                            <div class="mb-6">
-                                <label class="block text-gray-700 text-sm font-bold mb-2" for="country">
+                            <div className="mb-6">
+                                <label className="block text-gray-700 text-sm font-bold mb-2" for="country">
                                     country
                                 </label>
-                                <input class="shadow appearance-none border  rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="country" type="text" placeholder="Country" 
+                                <input className="shadow appearance-none border  rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="country" type="text" placeholder="Country" 
                                      onChange={(e) => setCountry(e.target.value)}
                                 />
                             </div>
-                            <div class="mb-4">
-                                <label class="block text-gray-700 text-sm font-bold mb-2" for="city">
+                            <div className="mb-4">
+                                <label className="block text-gray-700 text-sm font-bold mb-2" for="city">
                                     City
                                 </label>
-                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="city" type="text" placeholder="City" 
+                                <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="city" type="text" placeholder="City" 
                                  onChange={(e) => setCity(e.target.value)}
                                 />
                             </div>
                     
 
-                            <div class="flex items-center justify-between">
-                                <button type="submit"  class="bg-teal-400 hover:bg-teal-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                            <div className="flex items-center justify-between">
+                                <button type="submit"  className="bg-teal-400 hover:bg-teal-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
                                     Buy petrol station
                                 </button>
 
@@ -150,8 +150,8 @@ const BuyBusiness = () => {
                  
                 <div>
                 <div className="buyback1">
-                <div class="lg:grid lg:grid-cols-3 gap-4 pt-8 pb-8 pr-11 sm:pl-20">
-                <div class="col-span-2 ...">
+                <div className="lg:grid lg:grid-cols-3 gap-4 pt-8 pb-8 pr-11 sm:pl-20">
+                <div className="col-span-2 ...">
 
                 <h2 className={styles.header}>Why do you trust Korgroups Blockers</h2>
                 

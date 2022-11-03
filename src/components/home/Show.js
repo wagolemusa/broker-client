@@ -6,7 +6,6 @@ import { BsCheckLg } from "react-icons/bs";
 import { AiOutlineDribbble } from "react-icons/ai";
 import { TbPhoneCheck } from "react-icons/tb";
 import { BsAt } from "react-icons/bs";
-import Buy from "./BuyBusiness";
 import Footer from "../footer/Footer";
 import Relatd from "../Related";
 import Sold from "../Sold";
@@ -17,16 +16,21 @@ const Show = () => {
   const path = location.pathname.split("/")[2];
   const [showdata, setShowdata] = useState([]);
 
-  const getdatabyid = () => {
-    axios.get('https://brokerback.herokuapp.com/api/' + path)
-      .then((res) => {
-        const myPost = res.data.post;
 
-        setShowdata(myPost);
+  useEffect(() => {
+    const getdatabyid = () => {
+      axios.get('https://brokerback.herokuapp.com/api/' + path)
+        .then((res) => {
+          const myPost = res.data.post;
+  
+          setShowdata(myPost);
+  
+        })
+    }
 
-      })
-  }
-  useEffect(() => getdatabyid(), [path]);
+     getdatabyid();
+
+  }, [path]);
 
 
   const items = showdata.postPictures?.map(showpic =>
