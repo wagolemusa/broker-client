@@ -47,7 +47,7 @@ function Buyshell() {
         }
     }
 
-    const  FormTitle = ["Let us know you!", "Provide Business Active Contacts", "Let us know where you come from!"];
+        const  FormTitle = ["Let us know you!", "Provide Business Active Contacts", "Let us know where you come from!"];
         const PageDisplay = () => {
             if(page === 0){
                 return <Signup formData={formData} setFormData={setFormData}/>;
