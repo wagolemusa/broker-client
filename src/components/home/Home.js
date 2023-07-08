@@ -20,7 +20,7 @@ const Home = () => {
     const [city,  setCity] = useState("");
 
     const getcoutrydata = () =>{
-      axios.get('https://brokerback.herokuapp.com/api/country', {
+      axios.get('https://brokerbankend.onrender.com/api/country', {
         headers: {
           'Authorization': token,
           'Accept': 'application/json',
@@ -48,7 +48,7 @@ const Home = () => {
   
   const handleSubmit = async (e) => {
     e.preventDefault();
-      const response = await axios.post('https://brokerback.herokuapp.com/api/search', formData, {
+      const response = await axios.post('https://brokerbankend.onrender.com/api/search', formData, {
         headers: {
           'Authorization': token,
           'Accept' : 'application/json',

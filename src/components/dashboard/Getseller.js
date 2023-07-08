@@ -9,7 +9,7 @@ const Getseller = () => {
 const [shell, setShell] = useState([]);
 
 const getseller = () =>{
-  axios.get('https://brokerback.herokuapp.com/api/seller', {
+  axios.get('https://brokerbankend.onrender.com/api/seller', {
     headers: {
       'Authorization': token,
       'Accept': 'application/json',

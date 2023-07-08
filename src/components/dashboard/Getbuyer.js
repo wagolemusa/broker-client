@@ -8,7 +8,7 @@ const Getbuyer = () => {
     const [buyer, setBuyer] = useState([]);
 
     const getbuyer = () => {
-        axios.get('https://brokerback.herokuapp.com/api/buyer', {
+        axios.get('https://brokerbankend.onrender.com/api/buyer', {
             headers: {
                 'Authorization': token,
                 'Accept': 'application/json',

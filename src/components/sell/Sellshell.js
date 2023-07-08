@@ -25,7 +25,7 @@ function Sellshell() {
        
         setError(null)
 
-        const response = await axios.post('https://brokerback.herokuapp.com/api/seller', formData, {
+        const response = await axios.post('https://brokerbankend.onrender.com/api/seller', formData, {
             headers: {
                 'Authorization': '',
                 'Accept': 'application/json',

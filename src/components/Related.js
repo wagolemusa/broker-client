@@ -52,7 +52,7 @@ const Relatd = () => {
 
   
     const getAlldata = () => {
-        axios.get(`https://brokerback.herokuapp.com/api/country`)
+        axios.get(`https://brokerbankend.onrender.com/api/country`)
         .then((res) => {
           const myPost = res.data.post;
           setReated(myPost);

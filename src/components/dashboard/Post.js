@@ -36,7 +36,7 @@ const Post = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setError(null)
-        const response = await axios.post('https://brokerback.herokuapp.com/api/post/shell', post, {
+        const response = await axios.post('https://brokerbankend.onrender.com/api/post/shell', post, {
             headers: {
                 'Authorization': token,
                 "Content-Type": "multipart/form-data",

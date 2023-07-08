@@ -10,7 +10,7 @@ function Create() {
   const [postdata, setPostdata] = useState([]);
 
   const creatPost = () => {
-    axios.get('https://brokerback.herokuapp.com/api/post', {
+    axios.get('https://brokerbankend.onrender.com/api/post', {
 
       headers: {
         'Authorization': token,

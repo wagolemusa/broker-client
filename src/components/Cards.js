@@ -8,7 +8,7 @@ const Cards = () => {
     const [homedata, sethomedata] = useState([]);
   
     const gethomepost = () => {
-      axios.get('https://brokerback.herokuapp.com/api', {
+      axios.get('https://brokerbankend.onrender.com/api', {
   
         headers: {
           'Authorization': token,

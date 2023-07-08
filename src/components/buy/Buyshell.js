@@ -23,7 +23,7 @@ function Buyshell() {
     
     const handleSubmit = async () => {
         setError(null)
-        const response = await axios.post('https://brokerback.herokuapp.com/api/seller', formData, {
+        const response = await axios.post('https://brokerbankend.onrender.com/api/seller', formData, {
             headers: {
                 "Content-Type": "multipart/form-data",
                 "Access-Control-Allow-Origin": "*"

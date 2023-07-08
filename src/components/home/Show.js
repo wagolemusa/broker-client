@@ -19,7 +19,7 @@ const Show = () => {
 
   useEffect(() => {
     const getdatabyid = () => {
-      axios.get('https://brokerback.herokuapp.com/api/' + path)
+      axios.get('https://brokerbankend.onrender.com/api/' + path)
         .then((res) => {
           const myPost = res.data.post;
   

@@ -34,7 +34,7 @@ const BuyBusiness = () => {
             city
         }
       
-        const response = await axios.post("https://brokerback.herokuapp.com/api/buyer", dataForm, {
+        const response = await axios.post("https://brokerbankend.onrender.com/api/buyer", dataForm, {
             headers: {
                 'Authorization': token,
                  'Accept': 'application/json',
